@@ -9,15 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.ami.bitsandpizzas.R;
-
 public class PizzaMaterialFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         RecyclerView pizzaRecycler = (RecyclerView) inflater.inflate(
-                R.layout.fragment_fragment_pizza_material, container, false);
+                R.layout.fragment_pizza_material, container, false);
 
         String[] pizzaNames = new String[Pizza.pizzas.length];
         for (int i = 0; i < pizzaNames.length; i++) {
